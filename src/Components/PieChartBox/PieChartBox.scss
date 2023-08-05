@@ -1,0 +1,53 @@
+.pieChart{
+    width: 100%;
+    height: 100%;
+
+    .chart{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 90%;
+    }
+
+    h1{
+        font-size: 25px;
+    }
+
+    .summary{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        .options{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: .2rem;
+
+            .title{
+                display: flex;
+                align-items: center;
+                gap: .2rem;
+    
+                .dot{
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                }
+        
+                .name{
+                    font-size: 12px;
+                }
+            }
+    
+            .value{
+                font-size: 12px;
+            }
+        }
+
+       
+      
+    }
+
+}

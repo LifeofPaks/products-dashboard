@@ -1,0 +1,45 @@
+.dataTable{
+
+
+    .dataGrid{
+        background: #fff;
+        margin-top: 1rem;
+        padding-inline: 1rem;
+
+        .MuiDataGrid-toolbarContainer {
+            flex-direction: row-reverse;
+        }
+
+        .avatar{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .verified{
+            width: 16px;
+        }
+
+        .actions{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: .5rem;
+
+            .view{
+                img{
+                    width: 16px;
+                    cursor: pointer;
+                }
+            }
+
+            .delete{
+                img{
+                    width: 16px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

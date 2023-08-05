@@ -1,0 +1,11 @@
+@import "animate.css";
+@import '~loaders.css/src/animations/pacman.scss';
+
+.loader{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: fadeOut 1s 2s;
+    animation-fill-mode: forwards;
+  }

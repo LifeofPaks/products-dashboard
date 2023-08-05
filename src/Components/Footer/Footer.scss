@@ -1,0 +1,30 @@
+.footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 1.5rem;
+
+    p{
+        font-size: 10px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-weight: bold;
+
+        span{
+            color: #C9114D;
+            text-transform: capitalize;
+            font-family: 'clicker script', cursive;
+            font-size: 15px;
+            font-weight: bold;
+        }
+    }
+
+    span{
+        font-size: 10px;
+
+        span{
+            color: #C9114D;
+        }
+    }
+}
