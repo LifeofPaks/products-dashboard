@@ -8,6 +8,8 @@ import Menu from "../src/Components/Menu/Menu";
 import Footer from "../src/Components/Footer/Footer";
 import "./Styles/Global.scss";
 import { Routes, Route, Outlet } from "react-router-dom";
+import User from './Pages/User/User'
+import Product from './Pages/Product/Product'
 
 
 function App() {
@@ -37,6 +39,8 @@ function App() {
           <Route index element={<Home />} />
           <Route path="users" element={<Users />} />
           <Route path="products" element={<Products />} />
+          <Route path="/users/:id" element={<User/>} />
+          <Route path="/products/:id" element={<Product />} />
         </Route>
         <Route path="login" element={<Login />} />
       </Routes>

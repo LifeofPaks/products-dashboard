@@ -3,10 +3,11 @@ import "../Users/Users.scss";
 import DataTable from "../../Components/DataTable/DataTable";
 import addUser from "../../Assets/Images/icons8-add-user-64.png";
 import noImage from "../../Assets/Images/noImage.png";
-import { rows } from "../../Data/Data";
+import { UserRows } from "../../Data/Data";
 import Add from "../../Components/Add/Add";
 import {  Triangle } from "react-loader-spinner";
-import Verified from '../../Assets/Images/icons8-verified-48.png'
+import Verified from '../../Assets/Images/icons8-verified-64.png'
+import notVerified from '../../Assets/Images/icons8-cancel-48.png'
 
 const columns = [
   { field: "id", headerName: "ID", width: 70 },
@@ -63,7 +64,7 @@ const columns = [
     type: "boolean",
     renderCell: (params) => {
       return (
-        <img src={params.row.verified ? Verified : ''} alt="verified" className="verified" />
+        <img src={params.row.verified ? Verified : notVerified} alt="verified" className="verified" />
       );
     },
   },
@@ -83,9 +84,9 @@ const Users = () => {
             </button>
           </div>
 
-          <DataTable slug="users" columns={columns} rows={rows} />
+          <DataTable slug="users" columns={columns} rows={UserRows} />
         </div>
-        {open && <Add slug="U`ser" columns={columns} setOpen={setOpen} />}
+        {open && <Add slug="User" columns={columns} setOpen={setOpen} />}
       </div>
 
       <div className="loader">

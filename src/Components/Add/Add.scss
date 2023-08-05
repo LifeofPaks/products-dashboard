@@ -3,21 +3,17 @@
 .add{
     width: 100%;
     height: 100%;
-    
-    .modal{
-        position: fixed;
-        left: 0;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        background: #000000d2;
-        opacity: 0;
-        animation: fadeIn 1s .3s forwards;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #000000d2;
+    opacity: 0;
+    animation: fadeIn 1s .3s forwards;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-        .wrapper{
+        .modal{
             background: $main-bg;
             padding: 3rem;
             position: relative;
@@ -39,12 +35,41 @@
             }
 
             form{
+                display: flex;
+                max-width: 500px;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
 
+                .item{
+                    width: 48%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    margin-bottom: 20px;
+
+                    label{
+                        font-size: 14px;
+                    }
+
+                    input{
+                        padding: 10px;
+                        outline: none;
+                        background: transparent;
+                        color: #fff;
+                        border: 1px solid $soft-color;
+                        border-radius: 3px;
+                    }
+                }
 
                 button{
                     width: 100%;
+                    background: #fff;
+                    padding: 10px;
+                    font-weight: bold;
+                    border-radius: 3px;
                 }
             }
         }
-    }
+
 }

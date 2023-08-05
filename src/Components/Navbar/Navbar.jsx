@@ -5,15 +5,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBell, faExpand, faGear, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import grid from '../../Assets/Images/icons8-thumbnail-50.png'
 import avatar from '../../Assets/Images/IMG_1534 2.jpg'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
     <div className='navbar'>
-      <div className="logo">
-          <img src={Logo} alt="logo" />
-          <p className="logoText">Paks <span>Everything</span></p>
-      </div>
-
+      <Link to='/'>
+        <div className="logo">
+            <img src={Logo} alt="logo" />
+            <p className="logoText">Paks <span>Everything</span></p>
+        </div>
+      </Link>
       <div className="icons">
           <FontAwesomeIcon icon={faMagnifyingGlass}  className='icon'/>
           <img src={grid} alt="thumbnail" className='thumbnail' />

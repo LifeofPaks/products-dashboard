@@ -24,6 +24,7 @@ import Chart1 from '../Assets/Images/chart1.png'
 import Chart2 from '../Assets/Images/chart2.png'
 import Chart3 from '../Assets/Images/chart3.png'
 import Chart4 from '../Assets/Images/chart4.png'
+import Avatar from "../Assets/Images/IMG_1534 2.jpg";
 
 
 
@@ -333,7 +334,7 @@ export const barChartBoxVisit = {
 }
 
 
-export const rows = [
+export const UserRows = [
     { 
         id: 1,
         img: 'https://images.generated.photos/rl3plR-TRh-2GtqPWVspiNWaNO8i480cfpydSpecd5E/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/ODY4NTczLmpwZw.jpg',
@@ -353,7 +354,7 @@ export const rows = [
         email: 'theo@gmail.com',
         phone: '123 456 789',
         createdAt: '01. 08. 2023',
-        verified: 'verified'
+        verified: ''
     },
 
     { 
@@ -419,7 +420,7 @@ export const rows = [
         email: 'zaina@gmail.com',
         phone: '123 456 789',
         createdAt: '01. 08. 2023',
-        verified: 'verified'
+        verified: ''
     },
 
     { 
@@ -444,3 +445,295 @@ export const rows = [
         verified: 'verified'
     },
   ];
+
+
+  export const productRows = [
+
+    { 
+        id: 1,
+        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG_3aHxbxd8Q1oo1eWCko0A_2SLrMuKcE41g&usqp=CAU',
+        title: 'iPhone 14 ProMax', 
+        color: 'Gold', 
+        price: '$1,019.99',
+        producer: 'Apple',
+        createdAt: '01. 08. 2021',
+        inStock: true
+    },
+
+    { 
+        id: 2,
+        img: 'https://www.reliancedigital.in/medias/Sony-CFI-1008A01R-Gaming-Consoles-491936180-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wyMTI4NzN8aW1hZ2UvanBlZ3xpbWFnZXMvaDdiL2hiYi85NDU1NzczOTc0NTU4LmpwZ3wyNzc1NzEyNTU5ZDVjZjVhMmM1NTBhYzViYWVjNzIxMGQ0MzE3MTg1ZmM3ZmZhM2UxODM3NmM5YWNjMTg4NmY1',
+        title: 'Play Station 5', 
+        color: 'White', 
+        price: '$899.99',
+        producer: 'Sony',
+        createdAt: '01. 08. 2021',
+        inStock: true
+    },
+
+    { 
+        id: 3,
+        img: 'https://cdn.mos.cms.futurecdn.net/oyX9iadRXdAhnRDyrHsQWK.jpg',
+        title: 'Macbook Pro 2022', 
+        color: 'Gray', 
+        price: '$2,099.99',
+        producer: 'Apple',
+        createdAt: '01. 08. 2021',
+        inStock: true
+    },
+
+    { 
+        id: 4,
+        img: 'https://i.pcmag.com/imagery/reviews/07bWxhYyWgyyFuMk70BmF9D-2..v1615330249.jpg',
+        title: 'ONYX Studio 7', 
+        color: 'Black', 
+        price: '$399.99',
+        producer: 'Harman Kardon',
+        createdAt: '01. 08. 2021',
+        inStock: true
+    },
+
+    { 
+        id: 5,
+        img: 'https://i.pcmag.com/imagery/roundups/01gmhniWocIfT5VCFblGDtb-1..v1586754704.jpg',
+        title: '55" Curved Monitor', 
+        color: 'Black', 
+        price: '$445.00',
+        producer: 'Alienware',
+        createdAt: '01. 08. 2021',
+        inStock: true
+    },
+
+    { 
+        id: 6,
+        img: 'https://i.pcmag.com/imagery/reviews/04QSGMRR0ddVFZCJ8lEU9gq-1..v1569469984.jpg',
+        title: 'G502 Wireless Mouse', 
+        color: 'Black', 
+        price: '$249.99',
+        producer: 'LogiTech',
+        createdAt: '01. 08. 2021',
+        inStock: true
+    },
+
+    { 
+        id: 7,
+        img: 'https://gamerbraves.sgp1.cdn.digitaloceanspaces.com/2023/01/3D-Pulse-Headset.jpg',
+        title: 'Ps5 Pulse 3D Headset', 
+        color: 'Black', 
+        price: '$175.00',
+        producer: 'Sony',
+        createdAt: '01. 08. 2021',
+        inStock: false
+    },
+
+    { 
+        id: 8,
+        img: 'https://westobserver.com/wp-content/uploads/2022/08/a8135230-2314-11ed-b37b-3044df9a5134.jpeg',
+        title: 'Dual sense Edge', 
+        color: 'White', 
+        price: '$149.99',
+        producer: 'Sony',
+        createdAt: '01. 08. 2021',
+        inStock: true
+    },
+
+    { 
+        id: 9,
+        img: 'https://s.hdnux.com/photos/01/07/24/27/18695664/4/1200x0.jpg',
+        title: 'Airpods Pro', 
+        color: 'White', 
+        price: '$149.99',
+        producer: 'Apple',
+        createdAt: '01. 08. 2021',
+        inStock: true
+    },
+
+    { 
+        id: 10,
+        img: 'https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/Untitled1191.jpg',
+        title: 'Apple Watch Ultra', 
+        color: 'Gray', 
+        price: '$1,099.99',
+        producer: 'Apple',
+        createdAt: '01. 08. 2021',
+        inStock: false
+    },
+  ]
+
+
+export const singleUser = {
+    id: 1,
+    title: "Paks Promise",
+    img: Avatar, 
+    info: {
+      username: "Paks",
+      fullname: "Paks Promise",
+      email: "paks@gmail.com",
+      phone: "123 456 789",
+      status: "verified",
+    },
+    chart: {
+      dataKeys: [
+        { name: "visits", color: "#82ca9d" },
+        { name: "clicks", color: "#8884d8" },
+      ],
+      data: [
+        {
+          name: "Sun",
+          visits: 4000,
+          clicks: 2400,
+        },
+        {
+          name: "Mon",
+          visits: 3000,
+          clicks: 1398,
+        },
+        {
+          name: "Tue",
+          visits: 2000,
+          clicks: 3800,
+        },
+        {
+          name: "Wed",
+          visits: 2780,
+          clicks: 3908,
+        },
+        {
+          name: "Thu",
+          visits: 1890,
+          clicks: 4800,
+        },
+        {
+          name: "Fri",
+          visits: 2390,
+          clicks: 3800,
+        },
+        {
+          name: "Sat",
+          visits: 3490,
+          clicks: 4300,
+        },
+      ],
+    },
+    activities: [
+      {
+        text: "Paks Promise purchased Playstation 5 Digital Edition",
+        time: "3 day ago",
+        id: 1
+      },
+      {
+        text: "Paks Promise added 3 items into their wishlist",
+        time: "1 week ago",
+        id: 2
+      },
+      {
+        text: "Paks Promise purchased Sony Bravia KD-32w800",
+        time: "2 weeks ago",
+        id: 3
+      },
+      {
+        text: "Paks Promise reviewed a product",
+        time: "1 month ago",
+        id: 4
+      },
+      {
+        text: "Paks Promise added 1 items into their wishlist",
+        time: "1 month ago",
+        id: 5
+      },
+      {
+        text: "Paks Promise reviewed a product",
+        time: "2 months ago",
+        id: 6
+      },
+    ],
+  };
+
+  export const singleProduct = {
+    id: 1,
+    title: "Playstation 5 Digital Edition",
+    img: "https://cdn.mos.cms.futurecdn.net/HkdMToxijoHfz4JwUgfh3G-1200-80.jpg",
+    info: {
+      productId: "Ps348RD8788TN",
+      color: "White",
+      price: '$899.99',
+      producer: "Sony",
+      export: "Korea",
+    },
+    chart: {
+      dataKeys: [
+        { name: "visits", color: "#82ca9d" },
+        { name: "orders", color: "#8884d8" },
+      ],
+      data: [
+        {
+          name: "Sun",
+          visits: 4000,
+          orders: 2400,
+        },
+        {
+          name: "Mon",
+          visits: 3000,
+          orders: 1398,
+        },
+        {
+          name: "Tue",
+          visits: 2000,
+          orders: 3800,
+        },
+        {
+          name: "Wed",
+          visits: 2780,
+          orders: 3908,
+        },
+        {
+          name: "Thu",
+          visits: 1890,
+          orders: 4800,
+        },
+        {
+          name: "Fri",
+          visits: 2390,
+          orders: 3800,
+        },
+        {
+          name: "Sat",
+          visits: 3490,
+          orders: 4300,
+        },
+      ],
+    },
+
+    activities: [
+      {
+        text: "Paks Promise purchased Playstation 5 Digital Edition",
+        time: "3 days ago",
+        id: 1
+      },
+      {
+        text: "April Schwartz added Playstation 5 Digital Edition into their wishlist",
+        time: "1 week ago",
+        id: 2
+      },
+      {
+        text: "Davis Hardin purchased Playstation 5 Digital Edition",
+        time: "2 weeks ago",
+        id: 3
+      },
+      {
+        text: "Tessa Nunez reviewed the product",
+        time: "1 month ago",
+        id: 4
+      },
+      {
+        text: "Travis Bennett added Playstation 5 Digital Edition into their wishlist",
+        time: "1 month ago",
+        id: 5
+      },
+      {
+        text: "Anita Hammond reviewed the product",
+        time: "2 months ago",
+        id: 6
+      },
+    ],
+  };

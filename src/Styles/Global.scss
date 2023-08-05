@@ -22,6 +22,15 @@ button{
     border: 0;
     outline: 0;
     background: transparent;
+    transition: .3s;
+
+    &:active{
+        transform: translateY(-5px);
+    }
+
+    &:hover{
+        opacity: .7;
+    }
 }
 
 .main{

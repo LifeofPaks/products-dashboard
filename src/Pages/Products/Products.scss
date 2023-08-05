@@ -1,4 +1,29 @@
+@import '../../Styles//Variables.scss';
+
 .products{
     animation: fadeIn 1s 2s forwards;
     opacity: 0;
+
+    .info{
+
+        .title{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            button{
+                display: flex;
+                align-items: center;
+                color: #fff;
+                background: $soft-bg;
+                padding: .3rem .8rem;
+                border-radius: .3rem;
+        
+                img{
+                    width: 20px;
+                }
+            }
+        }
+       
+    } 
 }

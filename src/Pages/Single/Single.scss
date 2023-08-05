@@ -1,0 +1,126 @@
+.single{
+    animation: fadeIn 1s 2s forwards;
+    opacity: 0;
+    display: flex;
+
+
+    .view{
+        width: 50%;
+
+        .info{
+
+            .topInfo{
+
+                display: flex;
+                align-items: center;
+                gap: .7rem;
+
+                .avatar{
+                    width: 100px;
+                    height: 100px;
+                    object-fit: cover;
+                    border-radius: 1rem;
+                }
+
+                h1{
+                  font-size: 20px;
+                }
+
+                button{
+                    display: flex;
+                    align-items: center;
+                    gap: .2rem;
+                    color: #fff;
+                    background: #2e79ba;
+                    padding:5px 10px;
+                    border-radius: 10px;
+                    font-size: 10px;
+
+                    img{
+                        width: 10px;
+                    }
+                }
+            }
+
+            .details{
+                margin-top: 1rem;
+
+                .item{
+                        display: flex;
+                        align-items: center;
+                        gap: .5rem;
+                        margin-bottom: .5rem;
+                        font-size: 15px;
+
+                    .itemTitle{
+                        font-weight: 600;
+                        text-transform: capitalize;
+                    }
+
+                    .itemValue{
+
+                    }
+                }
+            }
+        }
+
+        hr{
+            width: 90%;
+            margin-top: 5rem;
+            height: 0;
+            border: .5px solid gray;
+            opacity: .5;
+        }
+
+        .chart{
+            margin-top: 50px;
+            width: 80%;
+            height: 300px;
+        }
+
+    }
+
+    .activities{
+        width: 50%;
+
+        h2{
+            margin-bottom: 20px;
+        }
+
+        ul{
+
+            li{
+                position: relative;
+                width: 1px;
+                background: #f45b69;
+                padding-top: 20px;
+
+                &:after{
+                    content: '';
+                    position: absolute;
+                    width: 10px;
+                    height: 10px;
+                    background: #f45b69;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    border-radius: 50%;
+                }
+
+                div{
+                    min-width: 400px;
+                    padding: 15px;
+                    background: #f45b680d;
+
+                    p{
+                        font-size: 14px;
+                    }
+                    small{
+                        font-size: 12px;
+                        color: rgba(240, 248, 255, 0.72);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -12,8 +12,7 @@ const Add = ({ slug, columns, setOpen }) => {
 
   return (
     <div className="add">
-      <div className="modal" onClick={() => setOpen(false)}>
-        <div className="wrapper">
+      <div className="modal">
           <span className="close" onClick={() => setOpen(false)}>
             <img src={CloseBtn} alt="close" className="closeBtn" />
           </span>
@@ -21,7 +20,7 @@ const Add = ({ slug, columns, setOpen }) => {
           <h1>Add New {slug}</h1>
           <form onSubmit={handleSubmit}>
             {columns
-              .filter((item) => item.field !== "id" && item.field !== "avatar")
+              .filter((item) => item.field !== "id" && item.field !== "avatar" && item.field !== "img" )
               .map((column) => (
                 <div className="item">
                   <label>{column.headerName}</label>
@@ -32,7 +31,6 @@ const Add = ({ slug, columns, setOpen }) => {
           </form>
         </div>
       </div>
-    </div>
   );
 };
 
