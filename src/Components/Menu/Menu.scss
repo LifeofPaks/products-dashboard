@@ -1,4 +1,5 @@
 @import '../../Styles/Variables.scss';
+@import '../../Styles/Responsive.scss';
 
 .menu{
 
@@ -13,6 +14,10 @@
             font-size: 12px;
             font-weight: 200;
             color: $soft-color;
+
+            @include lg{
+                display: none;
+            }
         }
 
         .listItem{
@@ -28,6 +33,9 @@
 
             .link{
                 font-size: 13px;
+                @include lg{
+                    display: none;
+                }
             }
 
             &:hover{

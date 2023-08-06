@@ -1,3 +1,5 @@
+@import '../../Styles/Responsive.scss';
+
 .navbar{
     display: flex;
     align-items: center;
@@ -5,12 +7,23 @@
     width: 100%;
     padding: .5rem;
 
+    @include sm{
+        gap: 2rem;
+     }
+
     .logo{
         display: flex;
         align-items: center;
 
+        @include sm{
+        }
+
         img{
             width: 40px;
+
+            @include sm{
+                width: 30px;
+            }
         }
 
         p{
@@ -35,9 +48,25 @@
         padding-inline: 2rem;
         gap: 1rem;
 
-        .icon, .thumbnail{
+        @include sm{
+            padding-inline: 0;
+            gap: .7rem;
+        }
+
+        .icon, .thumbnail, .iconx{
             cursor: pointer;
             font-size: 1.1rem;
+
+            @include sm{
+                font-size: .8rem;
+                padding-inline: 0;
+            }
+        }
+
+        .icon, .thumbnail{
+            @include sm{
+                display: none;
+            }
         }
 
         .thumbnail{
@@ -59,6 +88,14 @@
                 display: grid;
                 place-content: center;
                 font-size: 10px;
+
+                @include sm{
+                    width: .6rem;
+                    height: .6rem;
+                    font-size: 7px;
+                    top: -2px;
+                    right: -5px;
+                }
             }
         }
 
@@ -67,6 +104,10 @@
             align-items: center;
             margin-left: 2rem;
             gap: .5rem;
+
+            @include sm{
+                margin-left: .3rem;
+            }
 
             .avatar{
                 width: 30px;

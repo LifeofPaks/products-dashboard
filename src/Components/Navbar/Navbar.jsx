@@ -21,14 +21,14 @@ const Navbar = () => {
           <img src={grid} alt="thumbnail" className='thumbnail' />
           <FontAwesomeIcon icon={faExpand}  className='icon'/>
           <div className="notification">
-            <FontAwesomeIcon icon={faBell}  className='icon'/>
+            <FontAwesomeIcon icon={faBell}  className='iconx'/>
             <span className="item">1</span>
           </div>
           <div className="user">
             <img src={avatar} alt="avatar" className="avatar" />
             <span className="userName">Paks</span>
           </div>
-          <FontAwesomeIcon icon={faGear}  className='icon'/>
+          <FontAwesomeIcon icon={faGear}  className='iconx'/>
       </div>
 
     </div>

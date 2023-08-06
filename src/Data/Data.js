@@ -67,14 +67,14 @@ export const menu = [
       {
         id: 3,
         title: "Orders",
-        url: "/orders",
+        url: "/",
         icon: Orders,
       },
 
       {
         id: 4,
         title: "Posts",
-        url: "/posts",
+        url: "/",
         icon: Posts,
       },
     ],
@@ -552,8 +552,8 @@ export const singleUser = {
   },
   chart: {
     dataKeys: [
-      { name: "visits", color: "#82ca9d" },
-      { name: "clicks", color: "#8884d8" },
+      { name: "visits", color: "#82ca9d", id: '1' },
+      { name: "clicks", color: "#8884d8", id: '2' },
     ],
 
     data : [
@@ -632,20 +632,20 @@ export const singleUser = {
 
 export const singleProduct = {
   id: 1,
-  title: "Playstation 5 Digital Edition",
-  img: "https://cdn.mos.cms.futurecdn.net/HkdMToxijoHfz4JwUgfh3G-1200-80.jpg",
+  title: "Call of Duty Modern Warfare II",
+  img: "https://assets-prd.ignimgs.com/2023/06/19/cod-mw2-sale-blogroll-1687190214012.jpg",
   info: {
     productID: "Ps348RD8788TN",
     color: "White",
-    price: "$899.99",
+    price: "$89.99",
     producer: "Sony",
-    export: "Korea",
+    export: "UK",
   },
 
   chart: {
     dataKeys: [
-      { name: "visits", color: "#82ca9d" },
-      { name: "clicks", color: "#8884d8" },
+      { name: "visits", color: "#82ca9d", id: 1 },
+      { name: "clicks", color: "#8884d8", id: 2 },
     ],
       data : [
         {
@@ -688,17 +688,17 @@ export const singleProduct = {
 
   activities: [
     {
-      text: "Paks Promise purchased Playstation 5 Digital Edition",
+      text: "Paks Promise purchased Call of Duty Modern Warfare II",
       time: "3 days ago",
       id: 1,
     },
     {
-      text: "April Schwartz added Playstation 5 Digital Edition into their wishlist",
+      text: "April Schwartz added Call of Duty Modern Warfare II into their wishlist",
       time: "1 week ago",
       id: 2,
     },
     {
-      text: "Davis Hardin purchased Playstation 5 Digital Edition",
+      text: "Davis Hardin purchased Call of Duty Modern Warfare II",
       time: "2 weeks ago",
       id: 3,
     },
@@ -708,7 +708,7 @@ export const singleProduct = {
       id: 4,
     },
     {
-      text: "Travis Bennett added Playstation 5 Digital Edition into their wishlist",
+      text: "Travis Bennett added Call of Duty Modern Warfare II into their wishlist",
       time: "1 month ago",
       id: 5,
     },

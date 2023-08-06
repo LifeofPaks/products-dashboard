@@ -64,8 +64,8 @@ const Single = (props) => {
                 <Tooltip />
                 <Legend />
                 {
-                    props.chart.dataKeys.map(dataKey=>(
-                        <Line type="monotone" dataKey={dataKey.name} stroke={dataKey.color} />
+                    props.chart.dataKeys.map((dataKey)=>(
+                        <Line key={dataKey.id} type="monotone" dataKey={dataKey.name} stroke={dataKey.color} />
                     ))
                 }
               </LineChart>
