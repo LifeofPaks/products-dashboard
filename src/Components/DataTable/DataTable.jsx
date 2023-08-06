@@ -1,7 +1,7 @@
 import React from "react";
 import "../DataTable/DataTable.scss";
 import { DataGrid, GridToolbar } from '@mui/x-data-grid';
-import View from '../../Assets/Images/icons8-view-67.png'
+import View from '../../Assets/Images/icons8-view-60.png'
 import Delete from '../../Assets/Images/icons8-delete-60.png'
 import { Link } from "react-router-dom";
 
